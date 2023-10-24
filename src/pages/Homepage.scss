@@ -1,0 +1,116 @@
+.homepage {
+  .bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      background: #040812;
+    }
+  }
+
+  .container {
+    z-index: 1;
+    margin: 20px 0;
+
+    img {
+      transform: scale(0.8);
+    }
+
+    .description {
+      margin: 20px 5px;
+
+      .first {
+        color: #8ABDEB;
+        font-weight: 800;
+        margin: 10px 0px;
+      }
+
+      .second {
+        color: #8ABDEB;
+        font-weight: 400;
+      }
+    }
+
+    .list {
+      margin: 20px 0px;
+
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        svg {
+          color: #8ABDEB;
+          font-size: 12px;
+        }
+
+        p {
+          color: #8ABDEB;
+          font-weight: 800;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        .first {
+          background: #00EA96;
+          border: 4px solid #44FFBC;
+          border-radius: 17px;
+          font-size: 16px;
+          font-weight: 800;
+          color: #101C2D;
+          width: 100%;
+        }
+
+        .input {
+          background: #0000008f;
+          color: #4C6983;
+          border: 4px solid #44FFBC;
+          border-radius: 17px;
+          font-size: 16px;
+          font-weight: 800;
+          width: 100%;
+
+          input {
+            margin: 5px 10px;
+          }
+        }
+
+        .second {
+          background: #00EA96;
+          border: 4px solid #44FFBC;
+          border-radius: 17px;
+          font-size: 16px;
+          font-weight: 800;
+          color: #101C2D;
+          width: 50%;
+        }
+
+        .Mui-disabled {
+          background: #11282F;
+          color: #071316;
+          border: 4px solid #15313A;
+        }
+
+        .submit {
+          background: #00EA96;
+          border: 4px solid #44FFBC;
+          border-radius: 17px;
+          font-size: 16px;
+          font-weight: 800;
+          color: #101C2D;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
