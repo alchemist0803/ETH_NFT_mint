@@ -26,11 +26,15 @@ const Homepage = () => {
   }
 
   const loginDiscord = () => {
-    const dPopup = window.open(
-      `https://discord.com/api/oauth2/authorize?response_type=token&client_id=${clientId}&scope=${scope}&redirect_uri=${redirectUri}`,
-      "discordLogin",
-      "height=700,width=500"
-    );
+    // const dPopup = window.open(
+    //   `https://discord.com/api/oauth2/authorize?response_type=token&client_id=${clientId}&scope=${scope}&redirect_uri=${redirectUri}`,
+    //   "discordLogin",
+    //   "height=700,width=500"
+    // );
+    window.open(
+      `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=token&scope=${scope}`,
+      "_parent"
+    )
     window.addEventListener("message", handleMessage, false);
   };
 
